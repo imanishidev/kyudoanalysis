@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弓道分析管理</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ヘッダーセクション -->
+    <header class="header">
+        <div class="header-content">
+            <h1>弓道分析管理</h1>
+            <p>あなたの弓道の成長をサポート</p>
+            <button onclick="scrollToSection('contact')" class="contact-button">
+                お問い合わせ
+            </button>
+        </div>
+        <div class="scroll-indicator" onclick="scrollToSection('main')">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chevron-down">
+                <path d="m6 9 6 6 6-6"/>
+            </svg>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main id="main">
+        <!-- お問い合わせセクション -->
+        <section id="contact" class="section">
+            <h2>お問い合わせ</h2>
+            <div class="contact-box">
+                <div class="mail-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="16" x="2" y="4" rx="2"/>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                    </svg>
+                    <a href="mailto:imanishidev@icloud.com">imanishidev@icloud.com</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- プライバシーポリシーセクション -->
+        <section id="privacy" class="section">
+            <h2>プライバシーポリシー</h2>
+            <div class="privacy-content">
+                <p>
+                    弓道分析管理アプリは、ユーザーのプライバシーを尊重し、個人情報の保護に努めています。
+                    当アプリで収集する情報は、アプリの機能提供に必要な最小限のものに限定されます。
+                </p>
+                <p>
+                    収集した情報は、サービスの提供・改善、およびユーザーサポートの目的にのみ使用され、
+                    ユーザーの同意なく第三者に提供されることはありません。
+                </p>
+                <p>
+                    詳細なプライバシーポリシーについては、
+                    <a href="https://www.apple.com/legal/privacy/jp/" target="_blank" rel="noopener noreferrer">
+                        Appleのプライバシーポリシー
+                    </a>
+                    に準拠します。
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <p>© 2024 弓道分析管理. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function scrollToSection(id) {
+            const element = document.getElementById(id);
+            element?.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
